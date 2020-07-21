@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html 
+{
+  height: 100%;
+} 
+
+body {
+    background: linear-gradient(180deg, #01263E 16.37%, #005751 100%);
+}
+
+section {
+    margin-top: 12.5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 751.01px;
+    min-width: 1141.3px;
+    background: url(./background-jungle.svg)no-repeat center;
+    background-size: contain;
+    background-size: 1141.3px 751.01px;
+}
+.game {
+    position: relative;
+}
+
+.score {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 215px;
+    background-color: #01D8CD;
+    position: absolute;
+    top: -80px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 0px #008E87;
+    transition: opacity 1s ease 0.7s;
+}
+
+.score h2 {
+    font-size: 20px;
+}
+
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 95px;
+}
+
+.intro {
+    position: absolute;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro button, .match button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 5px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 0px;
+    padding-bottom: 0.2em;
+    outline: none;
+}
+
+.intro button:hover, .match button:hover{
+    color: #01D8CD;
+    border: 5px solid #01D8CD;
+    outline: none;
+
+}
+
+.intro button:active, .match button:active{
+    outline: none;
+}
+
+
+
+.match {
+    transition: opacity 1s ease 0.7s;
+}
+
+.match h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hands {
+    display: flex;
+    clip-path: inset(0 2.5% 0 2.5%);
+    justify-content: space-between;
+    height: 100%;
+    min-width: 1200px;
+    margin-top: 150px;
+    transition: opacity 1s ease 0.7s;
+}
+
+.message {
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+color: #042C2D;
+margin: auto 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    align-items: center;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+} 
+
+
+#tiger-paw-computer {
+    transform: scaleX(-1);
+}
